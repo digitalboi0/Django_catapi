@@ -15,6 +15,8 @@ import logging
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+LOGS_DIR = os.path.join(BASE_DIR, 'logs')
+os.makedirs(LOGS_DIR, exist_ok=True)
 
 
 # Quick-start development settings - unsuitable for production
@@ -139,7 +141,7 @@ LOGGING = {
         'file' : {
             'level' : 'ERROR',
             'class' : 'logging.FileHandler',
-            'filename' : os.path.join(BASE_DIR, 'logs', 'api_logs.txt'),
+            'filename' : os.path.join(LOGS_DIR, 'logs', 'api_logs.txt'),
             'formatter' : 'verbose',
         },
     },
