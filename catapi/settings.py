@@ -41,7 +41,7 @@ MIGRATION_MODULES = {
     'api': None, 
   
 }
-
+APPEND_SLASH = True
 
 # Application definition
 
