@@ -6,7 +6,7 @@ from django.utils import timezone
 # Create your models here.
 
 class String(models.Model):
-    id = models.TextField(max_length=64, primary_key=True, editable=False, unique=True)
+    id = models.CharField(max_length=64, primary_key=True, editable=False, unique=True)
     value = models.TextField()
     length = models.IntegerField()
     is_palindrome = models.BooleanField()
