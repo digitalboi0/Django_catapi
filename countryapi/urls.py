@@ -8,4 +8,5 @@ urlpatterns = [
     path('countries/image/', views.GetImageSummery.as_view(), name='country-image'),
     path('countries/', views.GetCountriesView.as_view(), name='country-list'),
     path('countries/<str:name>/', views.GetCountryView.as_view(), name='country-detail'),
+    path('countries/<str:name>', views.GetCountryView.as_view()),
 ]
