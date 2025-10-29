@@ -11,7 +11,6 @@ from decimal import Decimal
 
 
 class Country(models.Model):
-    id = models.AutoField(primary_key=True, editable=False)
     name = models.CharField(max_length=255, unique=True, blank=False, null=False)
     capital = models.CharField(max_length=255, blank=True, null=True)
     region = models.CharField(max_length=255,  blank=True, null=True)
