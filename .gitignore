@@ -1,6 +1,40 @@
 # .gitignore
-.env
-logs/
+# Python
+*.py[cod]
 __pycache__/
-*.pyc
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Django
+*.log
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Environment
+.env
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Cache
+cache/
+*.png
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Migrations (optional - usually you'd keep these)
+# */migrations/*.py
+# !*/migrations/__init__.py
