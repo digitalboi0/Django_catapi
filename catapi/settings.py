@@ -37,6 +37,11 @@ ALLOWED_HOSTS = [
 
 ]
 
+MIGRATION_MODULES = {
+    'api': None, 
+  
+}
+
 
 # Application definition
 
@@ -50,7 +55,7 @@ INSTALLED_APPS = [
     'api',
     'rest_framework',
     'corsheaders',
-    'countryapi'
+    'countryapi',
 ]
 
 MIDDLEWARE = [
