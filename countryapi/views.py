@@ -21,7 +21,7 @@ from django.db.models import Max
 # Create your views here.
 COUNTRY_URL = config("COUNTRY_URL")
 RATE_URL = config("RATE_URL")
-TIME_OUT = config("timeout", cast=int)
+TIME_OUT = 5
 
 logger = logging.getLogger(__name__)
 
